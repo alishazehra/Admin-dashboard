@@ -26,9 +26,9 @@ const DashboardPage = () => {
 
       // Simulate fetching admin stats
       setStats({
-        totalUsers: 150,       // Example stat: total users
-        totalPosts: 320,       // Example stat: total posts
-        activeUsers: 75,       // Example stat: active users in the last month
+        totalUsers: 100,       // Example stat: total users
+        totalPosts: 25,       // Example stat: total posts
+        activeUsers: 35,       // Example stat: active users in the last month
       });
     }
   }, [router]);

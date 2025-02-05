@@ -557,7 +557,7 @@ const ProductCards: React.FC = () => {
 
   return (
     <div className="p-4">
- <Link href={"/auth/signup"}>     <div className=" sign "><h1 className="font-bold">Sign-up/Login!</h1></div> </Link>
+ <Link href={"/auth/signup"}>     <div className=" sign "><h1 className="font-bold">Login to dashboard</h1></div> </Link>
       {/* Avion Header and Navigation */}
       <div>
         <h1 className="text-center text-3xl font-bold">Avion</h1>
