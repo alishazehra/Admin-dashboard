@@ -525,39 +525,39 @@ const Dashboard: React.FC = () => {
   const [activeTab, setActiveTab] = useState<string>('dashboard');
 
   return (
-    <div className="flex flex-col md:flex-row h-screen bg-gray-100">
+    <div className="flex flex-col sm:flex-row md:flex-row h-screen bg-gray-100">
       {/* Sidebar */}
-      <div className="w-full md:w-64 bg-gray-800 text-white">
+      <div className="w-full sm:w-34 md:w-64 bg-gray-800 text-white">
         <div className="p-5">
           <h2 className="text-2xl font-semibold text-center">Admin Panel</h2>
         </div>
         <ul>
           <li
-            className={`p-4 cursor-pointer hover:bg-gray-700 ${activeTab === 'dashboard' ? 'bg-teal-600' : ''}`}
+            className={`p-4 cursor-pointer hover:bg-green-700 ${activeTab === 'dashboard' ? 'bg-teal-600' : ''}`}
             onClick={() => setActiveTab('dashboard')}
           >
             Dashboard
           </li>
           <li
-            className={`p-4 cursor-pointer hover:bg-gray-700 ${activeTab === 'users' ? 'bg-teal-600' : ''}`}
+            className={`p-4 cursor-pointer hover:bg-green-700 ${activeTab === 'users' ? 'bg-teal-600' : ''}`}
             onClick={() => setActiveTab('users')}
           >
             Users
           </li>
           <li
-            className={`p-4 cursor-pointer hover:bg-gray-700 ${activeTab === 'analytics' ? 'bg-teal-600' : ''}`}
+            className={`p-4 cursor-pointer hover:bg-green-700 ${activeTab === 'analytics' ? 'bg-teal-600' : ''}`}
             onClick={() => setActiveTab('analytics')}
           >
             Analytics
           </li>
           <li
-            className={`p-4 cursor-pointer hover:bg-gray-700 ${activeTab === 'performance' ? 'bg-teal-600' : ''}`}
+            className={`p-4 cursor-pointer hover:bg-green-700 ${activeTab === 'performance' ? 'bg-teal-600' : ''}`}
             onClick={() => setActiveTab('performance')}
           >
             Performance
           </li>
           <li
-            className={`p-4 cursor-pointer hover:bg-gray-700 ${activeTab === 'sales' ? 'bg-teal-600' : ''}`}
+            className={`p-4 cursor-pointer hover:bg-green-700 ${activeTab === 'sales' ? 'bg-teal-600' : ''}`}
             onClick={() => setActiveTab('sales')}
           >
             Sales
@@ -571,36 +571,36 @@ const Dashboard: React.FC = () => {
           <div>
             <h1 className="text-3xl font-semibold mb-4">Dashboard Overview</h1>
             <p className="text-lg text-gray-600 mb-4">
-              Welcome to your Admin Panel! Below is a quick overview of key stats.
+              Welcome to  Admin Panel! Below is a quick overview of key stats.
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="bg-white p-4 rounded-lg shadow-md">
+            <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-2">
+              <div className="bg-green-500 text-white p-4 rounded-lg shadow-md">
                 <h3 className="text-xl font-semibold">Total Users</h3>
                 <p className="text-3xl font-bold">55</p>
               </div>
-              <div className="bg-white p-4 rounded-lg shadow-md">
+              <div className="bg-green-500 text-white p-4 rounded-lg shadow-md">
                 <h3 className="text-xl font-semibold">Active Users</h3>
                 <p className="text-3xl font-bold">25</p>
               </div>
-              <div className="bg-white p-4 rounded-lg shadow-md">
-                <h3 className="text-xl font-semibold">New Signups</h3>
+              <div className="bg-green-500 text-white p-4 rounded-lg shadow-md">
+                <h3 className="text-xl  font-semibold">New Signups</h3>
                 <p className="text-3xl font-bold">100</p>
               </div>
             </div>
             <br />
             {/* Recent Activity */}
             <div className="mb-6">
-              <h4 className="text-2xl font-semibold text-black-700 mb-4">Recent Activity</h4>
+              <h4 className="text-xl font-semibold text-black-700 mb-4">Recent Activity</h4>
               <div className="bg-gray-50 p-4 rounded-lg shadow-md">
                 <ul>
-                  <li className="text-gray-700">User Alisha Zehra signed up</li>
+                  <li className="text-gray-700">User Alisha signed up</li>
                   <li className="text-gray-700">User Neha opened the website</li>
                   <li className="text-gray-700">Admin updated the website settings</li>
                   <li className="text-gray-700">New user registration from admin dashboard</li>
                 </ul>
               </div>
               <Link href={"/auth/signup"}>
-                <h1 className='w-full py-2 px-4 text-white rounded-lg bg-green-600 text-center'>
+                <h1 className='w-full py-2 px-4 text-white rounded-lg bg-green-500 text-center'>
                   Log out
                 </h1>
               </Link>
@@ -646,7 +646,7 @@ const Dashboard: React.FC = () => {
             <div>
               <img
                 src="https://img.freepik.com/premium-vector/ui-dashboard-modern-infographic-with-gradient-finance-graphs-statistics-chart-column-diagrams-analysis-internet-vector-report_53562-9183.jpg?w=2000"
-                alt="hi"
+                alt="hi" height={"80%"} width={"80%"}
               />
               <br />
               <h3 className="font-semibold text-lg">Key Insights</h3>
@@ -667,7 +667,7 @@ const Dashboard: React.FC = () => {
               <h3 className="font-semibold text-lg">SEO Performance (100%)</h3>
               <p className="text-gray-700">SEO has seen significant improvement, now at 90%, which is crucial for organic search traffic.</p>
               <div className="mt-4">
-                <img src="performance.png" alt="hi" />
+                <img src="performance.png" alt="hi"  height={"100%"} width={"100%"} />
               </div>
             </div>
 
