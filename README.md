@@ -1,5 +1,4 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
+This is repository of my eccommerce website where I made admin dashboard inside app directory which is visible to owners of the website only.
 ## Getting Started
 
 First, run the development server:
