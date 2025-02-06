@@ -73,6 +73,7 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 const LoginPage = () => {
   const [email, setEmail] = useState('');
@@ -102,7 +103,7 @@ const LoginPage = () => {
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center">
       <div className="bg-white p-8 rounded-lg shadow-lg max-w-sm w-full">
-        <h2 className="text-2xl font-semibold text-center mb-6">Login</h2>
+        <h2 className="text-2xl font-semibold text-center mb-6">Login to Dashboard</h2>
         {error && <p className="text-red-500 text-center mb-4">{error}</p>}
 
         <form onSubmit={handleLogin} className="space-y-4">
@@ -119,7 +120,7 @@ const LoginPage = () => {
               required
             />
           </div>
-
+          
           <div>
             <label htmlFor="password" className="block text-sm font-medium text-gray-700">
               Password
@@ -140,6 +141,7 @@ const LoginPage = () => {
           >
             Log In
           </button>
+     <div className="w-full py-2 px-4 bg-blue-600 text-white rounded-lg bg-green-600 text-center">     <Link href="/cart">Back to website</Link> </div>
         </form>
       </div>
     </div>
